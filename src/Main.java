@@ -27,13 +27,13 @@ public class Main {
 
     private static void task2() {
         System.out.println("Задача 2");
-        int currentYear = LocalDate.now().getYear();
-        getClientOSAndYear("iOS", currentYear);
+        getClientOSAndYear("iOS", 2015);
     }
 
     public static void getClientOSAndYear (String name, int clientPhoneYear) {
         System.out.println("Установите версию приложения для " + name);
-        if (clientPhoneYear > 2015) {
+        int currentYear = LocalDate.now().getYear();
+        if (clientPhoneYear > currentYear) {
             System.out.println("Установите обычную версию приложения");
         } else {
             System.out.println("Установите облегчённую версию приложения");
