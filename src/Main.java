@@ -33,7 +33,8 @@ public class Main {
 
     public static void getClientOSAndYear (String name, int clientPhoneYear) {
         System.out.println("Установите версию приложения для " + name);
-        if (clientPhoneYear > 2015) {
+        int yearOS = 2015;
+        if (clientPhoneYear > yearOS) {
             System.out.println("Установите обычную версию приложения");
         } else {
             System.out.println("Установите облегчённую версию приложения");
