@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -25,7 +27,8 @@ public class Main {
 
     private static void task2() {
         System.out.println("Задача 2");
-        getClientOSAndYear("iOS", 2020);
+        int currentYear = LocalDate.now().getYear();
+        getClientOSAndYear("iOS", currentYear);
     }
 
     public static void getClientOSAndYear (String name, int clientPhoneYear) {
